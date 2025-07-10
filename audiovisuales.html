@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <title>Audiovisuales - Blog de Videojuegos</title>
+
+  <style>
+    body {
+      font-family: "Lucida Console", "Courier New", monospace;
+      background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #92a4ff;
+    }
+
+    h1 {
+      background-color: black;
+      padding: 10px;
+      margin: 0;
+      color: #92a4ff;
+    }
+
+    .centrado {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    video {
+      width: 80%;
+      max-width: 800px;
+      border: 2px solid #444;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    audio {
+      margin-bottom: 40px;
+    }
+
+    .galeria-modern {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 40px;
+      background: linear-gradient(to right, #d3d3ff, #ffe6f0);
+    }
+
+    .gallery {
+      width: 300px;
+      border-radius: 15px;
+      background-color: #f3f3ff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery:hover {
+      transform: scale(1.03);
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .desc {
+      padding: 12px;
+      text-align: center;
+      background-color: #f0f0ff;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    footer {
+      background-color: #333;
+      color: #FFF;
+      padding: 10px;
+      text-align: center;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Blog de Videojuegos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="preferencias.html">Preferencias</a></li>
+        <li><a class="active" href="audiovisuales.html">Audiovisuales</a></li>
+        <li><a href="contactos.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido multimedia -->
+  <div class="centrado">
+    <video src="assets/video/bg-video.mp4" autoplay muted loop></video>
+    <audio src="assets/audio/Guns N_ Roses - Welcome To The Jungle(MP3_160K).mp3" autoplay controls muted></audio>
+  </div>
+
+  <!-- Galería de imágenes -->
+  <section class="galeria-modern">
+    <div class="gallery">
+      <a href="assets/img/pixel1.png" target="_blank">
+        <img src="assets/img/pixel1.png" alt="Pixel Art 1" />
+      </a>
+      <div class="desc">Soldado galáctico en ciudad futurista</div>
+    </div>
+
+    <div class="gallery">
+      <a href="assets/img/pixel2.png" target="_blank">
+        <img src="assets/img/pixel2.png" alt="Pixel Art 2" />
+      </a>
+      <div class="desc">Gamers en sala de juego cibernético</div>
+    </div>
+
+    <div class="gallery">
+      <a href="assets/img/pixel3.png" target="_blank">
+        <img src="assets/img/pixel3.png" alt="Pixel Art 3" />
+      </a>
+      <div class="desc">Jugador concentrado con mando retro</div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Blog de Videojuegos. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

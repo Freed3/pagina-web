@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Videojuegos - Blog</title>
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: "Lucida Console", "Courier New", monospace;
+      background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #92a4ff;
+    }
+
+    h1 {
+      background-color: black;
+      padding: 10px;
+      margin: 0;
+      color: #92a4ff;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      border: 2px solid rgb(200, 200, 200);
+      letter-spacing: 1px;
+      font-size: 1.2rem;
+      background-color: #FFF;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    td, th {
+      border: 1px solid rgb(190, 190, 190);
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #606060;
+      color: white;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #FFF;
+      padding: 15px;
+      text-align: center;
+      font-size: 0.9rem;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Encabezado principal -->
+  <header>
+    <h1>Blog de Videojuegos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a class="active" href="preferencias.html">Preferencias</a></li>
+        <li><a href="audiovisuales.html">Audiovisuales</a></li>
+        <li><a href="contactos.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Preferencias de Usuario</h2>
+    <hr>
+
+    <form>
+      <table>
+        <colgroup>
+          <col style="background-color: #c2c2c2;">
+          <col style="background-color: #eeeeee;">
+          <col style="background-color: #eeeeee;">
+          <col style="background-color: #eeeeee;">
+          <col style="background-color: #eeeeee;">
+          <col style="background-color: #eeeeee;">
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th>Preferencia</th>
+            <th>Opción 1</th>
+            <th>Opción 2</th>
+            <th>Opción 3</th>
+            <th>Opción 4</th>
+            <th>Opción 5</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Género favorito</td>
+            <td>Acción</td>
+            <td>Aventura</td>
+            <td>RPG</td>
+            <td>Deportes</td>
+            <td>Simulación</td>
+          </tr>
+          <tr>
+            <td>Plataforma preferida</td>
+            <td>PC</td>
+            <td>PlayStation</td>
+            <td>Xbox</td>
+            <td>Switch</td>
+            <td>Móvil</td>
+          </tr>
+          <tr>
+            <td>Modo de juego</td>
+            <td>Solo</td>
+            <td>Multijugador</td>
+            <td>Cooperativo</td>
+            <td>Competitivo</td>
+            <td>Campaña</td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>&copy; 2025 Blog de Videojuegos. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

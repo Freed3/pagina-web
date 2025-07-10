@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <title>Videojuegos - Blog</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+      padding: 0;
+      margin: 0;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #92a4ff;
+    }
+
+    h1 {
+      background-color: black;
+      padding: 10px;
+      margin: 0;
+      color: #92a4ff;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 0 0 10px 0;
+      padding: 0;
+    }
+
+    h3 {
+      font-family: 'Arial Black', Gadget, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .articles {
+      flex: 1;
+      min-width: 60%;
+      margin-right: 20px;
+    }
+
+    .sidebar {
+      width: 30%;
+      background-color: #f8f8f8;
+      padding: 15px;
+      border-left: 2px solid #ccc;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    article {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    article img {
+      float: left;
+      margin: 0 20px 10px 0;
+      width: 180px;
+      border-radius: 8px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      clear: both;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar,
+      .articles {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      article img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Blog de Videojuegos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="preferencias.html">Preferencias</a></li>
+        <li><a href="audiovisuales.html">Audiovisuales</a></li>
+        <li><a href="contactos.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="articles">
+      <h2>Últimos Artículos</h2>
+      <hr />
+
+      <article>
+        <h3>Top 5 Juegos del 2025</h3>
+        <p class="fecha">Publicado el 8 de julio de 2025</p>
+        <img src="assets/img/top-juegos-2025.png" alt="Top 5 juegos del 2025" />
+        <p>Descubre los 5 juegos más esperados y mejor valorados de este año. Desde acción hasta estrategia, ¡hay para todos los gustos!</p>
+        <p>La industria del videojuego sigue evolucionando, y en 2025 nos sorprende con títulos que marcan un antes y un después. Entre ellos destaca *Cyber Strike: Reborn*, una entrega futurista con una historia inmersiva y una jugabilidad cargada de adrenalina. Por su parte, *Kingdoms of Ember* introduce una mecánica de combate táctica por turnos con decisiones que afectan profundamente el desarrollo de la historia. *Puzzle World XR* innova con su integración de realidad aumentada, ideal para quienes buscan retos mentales. También encontramos *Speed Horizon 5*, que redefine las carreras arcade, y *Legends of the Core*, una aventura narrativa con gráficos 2.5D que ha emocionado a los fans del género.</p>
+      </article>
+
+      <article>
+        <h3>¿Vale la pena comprar una consola en 2025?</h3>
+        <p class="fecha">Publicado el 5 de julio de 2025</p>
+        <img src="assets/img/consola-2025.png" alt="Comprar consola 2025" />
+        <p>Con la evolución del gaming en la nube, analizamos si aún es conveniente invertir en consolas tradicionales. ¿Streaming o consola física?</p>
+        <p>El avance de la tecnología ha generado un cambio profundo en la forma de acceder a los videojuegos. Las plataformas de juego en la nube, como Xbox Cloud Gaming o GeForce NOW, permiten ejecutar títulos de alta gama sin necesidad de una consola potente, siempre que se cuente con una buena conexión a Internet. Sin embargo, las consolas siguen ofreciendo ventajas importantes: rendimiento gráfico sin depender de la red, juegos exclusivos, acceso a medios físicos y una experiencia de juego más estable. Además, las nuevas generaciones de consolas como PlayBox Z o NeoSwitch Pro incluyen soporte para realidad virtual, mejor refrigeración y almacenamiento expandible.</p>
+      </article>
+
+      <article>
+        <h3>Los juegos indie que sorprendieron en 2025</h3>
+        <p class="fecha">Publicado el 2 de julio de 2025</p>
+        <img src="assets/img/indie-2025.png" alt="Juegos indie 2025" />
+        <p>Este año, varios juegos desarrollados por estudios independientes superaron a grandes producciones, gracias a sus historias, jugabilidad y estilo visual únicos.</p>
+        <p>Títulos como *Echoes of the Deep*, *BitRacer* y *Lumen Shadows* han captado la atención de miles de jugadores alrededor del mundo. Con mecánicas frescas, apartados artísticos memorables y narrativas profundas, estos juegos demuestran que el talento y la pasión pueden superar incluso a los mayores presupuestos. El 2025 ha sido testigo de un renacimiento indie que fortalece la diversidad y calidad del mundo gamer.</p>
+      </article>
+    </section>
+
+    <aside class="sidebar">
+      <h3>Categorías</h3>
+      <ul>
+        <li><a href="#">Acción</a></li>
+        <li><a href="#">Aventura</a></li>
+        <li><a href="#">RPG</a></li>
+        <li><a href="#">Deportes</a></li>
+      </ul>
+
+      <h3>Noticias Rápidas</h3>
+      <p>🎮 Nueva consola portátil de Sony será lanzada en diciembre.</p>
+      <p>🚀 GTA VI podría anunciarse oficialmente en agosto.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Blog de Videojuegos. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
