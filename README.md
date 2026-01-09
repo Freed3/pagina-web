@@ -1,64 +1,76 @@
-¡Perfecto! Ya **pude ver que tu repositorio `pagina-web` sí existe públicamente** y contiene archivos HTML estáticos:
-📁 `assets/`
-📄 `index.html`
-📄 `audiovisuales.html`
-📄 `contactos.html`
-📄 `preferencias.html`
-📄 `favicon.ico`
-Esto indica que es una **página web estática en HTML y CSS** 📄💻 ([GitHub][1])
+# 🌐 Página Web
 
-Aquí tienes un **archivo README listo para tu repositorio**:
+Este repositorio contiene una **página web estática** desarrollada con **HTML y CSS**, cuyo propósito es presentar información organizada en varias secciones mediante distintas páginas.
+
+Es un proyecto sencillo, ideal para **aprendizaje**, **práctica académica** y como base para futuros desarrollos web.
 
 ---
 
-````markdown
-# 🌐 Pagina Web
+## 📌 Descripción del proyecto
 
-Este repositorio contiene una **página web estática** construida con HTML, CSS y recursos multimedia.
-
-Es un proyecto sencillo ideal para mostrar contenido web básico sin backend.
+La página web está compuesta por varios archivos HTML interconectados, permitiendo la navegación entre secciones como inicio, audiovisuales, contactos y preferencias. No utiliza backend ni base de datos, por lo que funciona directamente en el navegador.
 
 ---
 
-## 🚀 Contenido del proyecto
+## 🗂 Estructura del proyecto
 
-Archivos principales:
-
-- 📄 `index.html` — Página principal
-- 📄 `audiovisuales.html` — Sección de audiovisuales
-- 📄 `contactos.html` — Sección de contacto
-- 📄 `preferencias.html` — Sección de preferencias
-- 📁 `assets/` — Imágenes y recursos
-- 🏷️ `favicon.ico` — Icono del sitio
-
----
-
-## 🧰 Tecnologías utilizadas
-
-* **HTML**
-* **CSS**
-* Archivos multimedia en `assets/`
-
-Este proyecto es **100 % estático** (no usa backend ni base de datos).
+```
+pagina-web/
+│
+├── index.html            # Página principal
+├── audiovisuales.html    # Sección de contenido audiovisual
+├── contactos.html        # Página de contacto
+├── preferencias.html     # Página de preferencias
+├── assets/               # Imágenes y recursos multimedia
+└── favicon.ico           # Icono del sitio web
+```
 
 ---
 
-## 📌 Cómo usar
+## ⚙️ Tecnologías utilizadas
 
-1. Clonar o descargar el repositorio:
+* **HTML** — Estructura del sitio web
+* **CSS** — Estilos y diseño visual
+* **Recursos multimedia** — Imágenes y elementos visuales
+
+> Este proyecto es **100 % estático**, no requiere servidor ni instalación de dependencias.
+
+---
+
+## 🚀 Cómo usar el proyecto
+
+1. Clonar el repositorio:
 
 ```bash
 git clone https://github.com/Freed3/pagina-web.git
-````
+```
 
-2. Abrir **`index.html`** en tu navegador favorito (Chrome, Firefox, Edge, etc.).
+2. Abrir el archivo `index.html` en cualquier navegador web.
 
-¡Listo! Ya puedes navegar entre las páginas del sitio.
+3. Navegar por las diferentes secciones del sitio.
 
 ---
 
-## 📌 Opcional: Publicar en GitHub Pages
+## 🎯 Objetivo del proyecto
 
-Puedes alojar esta página fácilmente usando **GitHub Pages** para que sea accesible en internet.
-Sólo ve a **Settings → Pages** y elige la rama `main` como fuente para publicar tu sitio estático. ([GitHub Docs][2])
+* Practicar el uso de **HTML y CSS**
+* Comprender la estructura de una página web multipágina
+* Desarrollar habilidades básicas de diseño web
+
+---
+
+## 👥 Público al que va dirigido
+
+* Estudiantes de desarrollo web
+* Personas que están iniciando en HTML y CSS
+* Proyectos académicos o demostrativos
+
+---
+
+## ✨ Posibles mejoras futuras
+
+* Mejorar el diseño visual
+* Añadir diseño responsive
+* Integrar JavaScript para interactividad
+* Publicar el sitio con GitHub Pages
 
